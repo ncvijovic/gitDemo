@@ -1,0 +1,17 @@
+name: Build branch image
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: branch name, hash or tag
+        required: true
+        default: master
+  jobs:
+    printHash:
+    name: print hash of image
+    runs-on: ubuntu-latest
+    needs: build-images
+    steps:
+      - run: |
+          echo "Image hash ${{steps.image-tag.outputs.tag}}"
