@@ -7,8 +7,8 @@ on:
         description: branch name, hash or tag
         required: true
         default: master
-  jobs:
-    printHash:
+jobs:
+  printHash:
     name: print hash of image
     runs-on: ubuntu-latest
     needs: build-images
