@@ -12,5 +12,4 @@ jobs:
     name: print hash of image
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "Branch ${{github.event.inputs.branch}} - $GITHUB_EVENT_NAME"
+      - run: echo "Branch ${{github.event.inputs.branch}} - $GITHUB_EVENT_NAME"
