@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Image hash ${{steps.image-tag.outputs.tag}}"
+          echo "Branch ${{github.event.inputs.branch}} - ${{GITHUB_REF}}"
