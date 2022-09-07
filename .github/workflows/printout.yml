@@ -8,4 +8,4 @@ jobs:
     name: print hash of image
     runs-on: ubuntu-latest
     steps:
-      - run: echo "`Branch` ${{github.event.inputs.branch}} - ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+      - run: echo '### Hello world! `test` :rocket:' >> $GITHUB_STEP_SUMMARY
